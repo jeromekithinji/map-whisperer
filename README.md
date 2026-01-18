@@ -1,7 +1,7 @@
 # 🗺️ Map Whisperer  
 **No more “where should we go?”**
 
-Map Whisperer helps you actually *use* your saved Google Maps places. Instead of endlessly scrolling through saved lists, you can filter them or just ask what you’re looking for — and get smart, ranked recommendations that make sense.
+Map Whisperer helps you actually *use* your saved Google Maps places. Instead of endlessly scrolling through saved lists, you can filter them or just ask what you’re looking for and get smart, ranked recommendations that make sense.
 
 ![Map Whisperer Landing Page](src/assets/screenshots/landingPage.png)
 ---
