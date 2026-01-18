@@ -1,0 +1,9 @@
+{
+	"watch": ["api"],
+	"ext": "js,json",
+	"ignore": ["node_modules", "src", "public", "dist"],
+	"exec": "node api/server.js",
+	"env": {
+		"NODE_ENV": "development"
+	}
+}

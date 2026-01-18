@@ -1,0 +1,38 @@
+// Design Tokens - Theme Variables
+// Change these values to update the entire site theme
+
+// Colors
+$color-primary: #3C6E71;        // stormy teal
+$color-secondary: #284B63;      // yale blue
+$color-tertiary: #D9D9D9;       // alabaster grey (muted accents)
+$color-background: #FFFFFF;
+$color-surface: #F9FAFB;
+$color-text-primary: #353535;   // graphite
+$color-text-secondary: #6B7280;
+$color-border: #D9D9D9;
+
+// Typography
+$font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+$font-family-heading: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+$font-size-heading: 2rem;
+$font-size-heading-small: 1.5rem;
+$font-size-body: 1rem;
+$font-size-small: 0.875rem;
+$font-weight-bold: 600;
+$font-weight-normal: 400;
+
+// Spacing
+$spacing-xs: 0.25rem;
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 1.5rem;
+$spacing-xl: 2rem;
+$spacing-2xl: 3rem;
+
+// Layout
+$header-height: 64px;
+$border-radius: 8px;
+$border-radius-small: 4px;
+$shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);

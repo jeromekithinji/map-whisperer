@@ -1,0 +1,49 @@
+@import '../../styles.scss';
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: $header-height;
+	background-color: $color-secondary;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: $shadow-sm;
+	z-index: 1000;
+}
+
+.header__content {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	padding: 0 $spacing-lg;
+	gap: $spacing-md;
+}
+
+.header__logo {
+	height: 32px;
+	width: auto;
+	flex-shrink: 0;
+}
+
+.header__title-container {
+	display: flex;
+	align-items: baseline;
+	gap: $spacing-sm;
+}
+
+.header__title {
+	font-family: $font-family-heading;
+	font-size: $font-size-heading-small;
+	font-weight: $font-weight-bold;
+	color: $color-background;
+	margin: 0;
+}
+
+.header__tagline {
+	font-family: $font-family-base;
+	font-size: $font-size-small;
+	font-style: italic;
+	color: $color-background;
+	opacity: 0.9;
+}

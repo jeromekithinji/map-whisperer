@@ -1,0 +1,120 @@
+@import '../../styles.scss';
+
+.header-loading-walker {
+  flex: 1;
+  margin-left: $spacing-lg;
+  margin-right: $spacing-lg;
+  position: relative;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+
+  &--complete {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.header-loading-walker__track {
+  position: relative;
+  height: 3px;
+  background-color: rgba($color-border, 0.3);
+  border-radius: 2px;
+  margin-top: $spacing-xs;
+  overflow: visible;
+}
+
+.header-loading-walker__fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: $color-primary;
+  border-radius: 2px;
+  transition: width 0.3s ease-out;
+}
+
+.header-loading-walker__walker {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 24px;
+  height: 24px;
+  transition: left 0.3s ease-out;
+  animation: walkerBounce 0.6s ease-in-out infinite;
+}
+
+.header-loading-walker--complete .header-loading-walker__walker {
+  animation: none;
+}
+
+.header-loading-walker__svg {
+  width: 100%;
+  height: 100%;
+  color: $color-surface;
+  display: block;
+}
+
+.header-loading-walker__arm-left {
+  animation: armSwingLeft 0.6s ease-in-out infinite;
+  transform-origin: 12px 12px;
+}
+
+.header-loading-walker__arm-right {
+  animation: armSwingRight 0.6s ease-in-out infinite;
+  transform-origin: 12px 12px;
+}
+
+.header-loading-walker__leg-left {
+  animation: legStepLeft 0.6s ease-in-out infinite;
+  transform-origin: 12px 17px;
+}
+
+.header-loading-walker__leg-right {
+  animation: legStepRight 0.6s ease-in-out infinite;
+  transform-origin: 12px 17px;
+}
+
+@keyframes walkerBounce {
+  0%, 100% {
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    transform: translate(-50%, -60%);
+  }
+}
+
+@keyframes armSwingLeft {
+  0%, 100% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes armSwingRight {
+  0%, 100% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+}
+
+@keyframes legStepLeft {
+  0%, 100% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes legStepRight {
+  0%, 100% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+}
